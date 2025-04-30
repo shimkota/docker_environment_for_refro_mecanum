@@ -11,7 +11,7 @@
     ```
 3. Ubuntu 22.04のインストール. コマンドラインからUbuntu をインストールするために以下のコマンドを実行
    ```
-    wsl --install -d Ubuntu-20.04
+    wsl --install -d Ubuntu-22.04
    ```
 WSL2にUbuntuがインストールされるので、この後の作業は下記インストラクションによる
 ```
@@ -21,6 +21,11 @@ Linux K000XXXXXX 5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UT
 
 ---
 ## WSL上の作業
+- リポジトリのクローン
+  ```
+  git clone https://github.com/shimkota/refro_mecanum_envirnment.git
+  cd refro_mecanum_envirnment
+  ```
 - `docker`フォルダ直下に`kjm_ws`フォルダを作成
   ```
   mkdir kjm_ws
@@ -28,7 +33,8 @@ Linux K000XXXXXX 5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UT
   ```
 - Docker インストール
    ```
-    bash install_docker.sh
+   cd refro_mecanum_envirnment
+   bash install_docker.sh
    ```
 - wslを一度シャットダウンして再起動
    ```
